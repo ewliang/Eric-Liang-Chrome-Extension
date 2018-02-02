@@ -10,7 +10,8 @@
     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
     <style>
       html, body {
-        width: 365px;
+        min-width: 360px;
+        max-width: 480px;
         min-height: 180px;
         font-family: 'Open Sans', sans-serif;
         font-size: 14px;
@@ -19,8 +20,21 @@
       }
 
       h1 {
-        font-size: 20px;
-        font-weight: 200;
+        font-size: 18px;
+        font-weight: 600;
+        text-transform: uppercase;
+      }
+
+      h2 {
+        font-size: 16px;
+        font-weight: 600;
+        text-transform: uppercase;
+      }
+
+      h3, h4, h5, h6 {
+        font-size: 14px;
+        font-weight: 600;
+        text-transform: uppercase;
       }
 
       p {
@@ -32,25 +46,35 @@
         color: #222222;
       }
 
+      main {
+        padding: 3%;
+      }
+
+      .main-header {
+        padding: 5%;
+      }
+
       .logo img {
         max-width: 35px !important;
         height: auto;
-      }
-
-      .inline-list li {
-        display: inline-block;
       }
 
       .version {
         font-size: 12px;
         text-transform: uppercase;
       }
+
+      .main-footer {
+        color: #777;
+        font-size: 12px;
+        padding: 5%;
+      }
     </style>
   </head>
   <body>
-    <div class = "header">
+    <div class = "main-header">
       <div class = "container">
-        <div class = "row">
+        <div class = "row text-center">
           <div class = "col-lg-12">
             <h1 class = "logo">
               <img src = "images/logo.png" alt = "Eric Liang Logo"/>
@@ -60,25 +84,50 @@
         </div><!--end row-->
       </div><!--end container-->
     </div><!--end header-->
-    <div class = "content">
+
+    <main class = "text-center">
       <div class = "container">
         <div class = "row">
-          <div class = "col-lg-12">
-            <p>
-              Easily get in touch with Eric Liang.
-            </p>
+          <div class = "col-lg-6">
+            <h2>My Favorite Links</h2>
+          </div><!--end col-lg-6-->
+          <div class = "col-lg-6">
 
+            <div class="list-group">
+              <a class="list-group-item" href = "https://www.gdax.com" target = "_blank">Gdax</a>
+              <a class="list-group-item" href = "https://www.youtube.com" target = "_blank">YouTube</a>
+              <a class="list-group-item" href = "https://coinmarketcap.com/" target = "_blank">CoinMarketCap</a>
+              <a class="list-group-item" href = "https://www.tutorialspoint.com" target = "_blank">TutorialsPoint</a>
+              <a class="list-group-item" href = "http://www.eric-liang.com" target = "_blank">Personal Website</a>
+                <a class="list-group-item" href = "https://www.goalstriver.com" target = "_blank">Goal Striver</a>
+            </div>
+
+          </div><!--end col-lg-6-->
+        </div><!--end row-->
+      </div><!--end container-->
+    </main>
+
+    <footer class = "main-footer">
+      <div class = "container">
+        <div class = "row text-center">
+          <div class = "col-lg-12">
             <ul class = "list-inline">
-              <li class = "list-inline-item"><a href = ""><i class = "fa fa-youtube fa-lg"></i></a></li>
-              <li class = "list-inline-item"><a href = ""><i class = "fa fa-instagram fa-lg"></i></a></li>
-              <li class = "list-inline-item"><a href = ""><i class = "fa fa-twitter fa-lg"></i></a></li>
-              <li class = "list-inline-item"><a href = ""><i class = "fa fa-github fa-lg"></i></a></li>
-              <li class = "list-inline-item"><a href = ""><i class = "fa fa-facebook fa-lg"></i></a></li>
+              <li class = "list-inline-item"><a href = "https://www.youtube.com/user/ewliang" target = "_blank"><i class = "fa fa-youtube fa-lg"></i></a></li>
+              <li class = "list-inline-item"><a href = "https://instagram.com/ericwliang" target = "_blank"><i class = "fa fa-instagram fa-lg"></i></a></li>
+              <li class = "list-inline-item"><a href = "https://twitter.com/ericwliang" target = "_blank"><i class = "fa fa-twitter fa-lg"></i></a></li>
+              <li class = "list-inline-item"><a href = "https://github.com/ewliang" target = "_blank"><i class = "fa fa-github fa-lg"></i></a></li>
+              <li class = "list-inline-item"><a href = "https://www.facebook.com/ewliangofficial/" target = "_blank"><i class = "fa fa-facebook fa-lg"></i></a></li>
             </ul>
           </div><!--end col-lg-12-->
         </div><!--end row-->
+        <div class = "row text-center">
+          <div class = "col-lg-12">
+            Copyright &copy; 2018 <a href = "www.eric-liang.com">Eric Liang</a>. All Rights Reserved.
+            Designed and Developed by <a href = "www.eric-liang.com">Eric Liang</a>
+          </div><!--end col-lg-12-->
+        </div><!--end row-->
       </div><!--end container-->
-    </div><!--end content-->
+    </footer>
 
     <script src = "popup.js"></script>
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
